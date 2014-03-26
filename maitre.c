@@ -63,10 +63,12 @@ static void send_next_number(int sock, msg * m)
         }
         pthread_mutex_unlock(&mtx_resultat);
 
-        if(n == 0) {
+        if(n == 0)
+        {
             print_msg_factors(m);
         }
-        else {
+        else
+        {
             m->ctl = CTL_M_SENDNUMBER;
             m->nbr = n;
             send(sock, m, sizeof(msg), 0);
@@ -119,8 +121,8 @@ static void * handle_slave(void * rawip)
             memcpy(resultats[nbResultats].factors, m.factors, MAX_FACTORS * sizeof(uint64_t));
             resultats[nbResultats].nb_factors = m.nb_factors;
             nbResultats++;
-             pthread_mutex_unlock(&mtx_resultat);
-    
+            pthread_mutex_unlock(&mtx_resultat);
+
 
             print_msg_factors(&m);
             send_next_number(sock, &m);

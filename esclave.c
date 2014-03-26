@@ -11,7 +11,6 @@
 #include "common.h"
 
 #define NB_THREADS 4
-#define NB_OF_SMALL_PRIMES 10000000
 
 static void * handle_requests(void * rawsock)
 {
