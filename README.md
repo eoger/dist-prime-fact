@@ -3,18 +3,17 @@ dist-prime-fact
   
 ## What is this ?
 
-This is a distributed prime factorization system, it processes 64 bits integers.
-
-1 PC acts as a master, the other PCs are the workers.
+This is a distributed prime factorization system, it processes 64 bits integers.  
+One PC acts as a master, the other PCs are the slaves (workers).  
 The master connects to all workers and sends them numbers to crunch.
 
 
 ## How to
 
-Put the numbers you want to factorize in numbers.txt. (1 number per line)
-Put all the IPs of the workers in ips.txt. (1 IP per line)
-Start the esclave program on the workers.
-Start the maitre program on the master PC.
+1. Put the numbers you want to factorize in numbers.txt. (1 number per line)  
+2. Put all the IPs of the workers in ips.txt. (1 IP per line)  
+3. Start the *esclave* program on the workers.  
+4. Start the *maitre* program on the master PC.  
 
 ## Implementation details
 * Communication is done via TCP sockets.
