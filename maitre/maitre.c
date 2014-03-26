@@ -7,7 +7,7 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 
-#include "common.h"
+#include "../shared/common.h"
 
 #define NUMBERS_FILE "numbers.txt"
 #define IPS_FILE "ips.txt"

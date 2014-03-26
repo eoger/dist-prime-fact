@@ -8,7 +8,7 @@
 #include <unistd.h>
 
 #include "brent-pollard.h"
-#include "common.h"
+#include "../shared/common.h"
 
 #define NB_THREADS 4
 

@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 #include "brent-pollard.h"
-#include "common.h"
+#include "../shared/common.h"
 
 /*
  * Maths provided by http://remcobloemen.nl/
